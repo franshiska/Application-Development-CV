@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppDev Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+    @keyframes pulsePop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); }
+      100% { transform: scale(1); }
+    }
+    @keyframes bounceHeart {
+      0% { transform: translateY(0); }
+      30% { transform: translateY(-10px); }
+      50% { transform: translateY(0); }
+      70% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes floatUpDown {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes fadeSlideUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen py-10 bg-cover bg-center text-[#333333]" style="background-image: url('images/686565.jpg');">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Profile Banner -->
+  <div class="max-w-3xl mx-auto mb-12 p-4" data-aos="fade-down">
+    <div class="bg-cover bg-center rounded-xl shadow-lg" style="background-image: url('images/border3.jpg');">
+      <div class="flex flex-col sm:flex-row items-center gap-6 px-6 py-4 bg-white bg-opacity-80 rounded-xl">
+        <img src="images/IMG_9805.JPG" alt="My Photo" class="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-4 border-pink-600 shadow-md object-cover" />
+        <div class="text-center sm:text-left text-pink-900">
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-wide">Franshiska Michaella Pacatang</h1>
+          <p class="text-lg sm:text-xl mt-2 font-medium">Student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Cards -->
+  <div class="flex flex-wrap justify-center gap-8 mt-8 animate-fadeSlideUp">
+    <div class="w-[450px] h-[450px] bg-center bg-cover text-white text-center flex flex-col justify-center items-center p-5" style="background-image: url('images/pinkleaf.jpg'); animation: pulsePop 2s ease-in-out infinite;" data-aos="zoom-in">
+      <h2 class="text-xl font-bold mb-2">Education</h2>
+      <p class="text-sm font-semibold">Bachelor's in Information Technology</p>
+      <p class="text-sm">Ateneo de Davao University</p>
+      <p class="text-sm">2027</p>
+    </div>
+
+    <a href="https://github.com/franshiska?tab=repositories" target="_blank" class="w-[450px] h-[450px] bg-center bg-cover text-white text-center flex flex-col justify-center items-center p-5" style="background-image: url('images/pinkleaf.jpg'); animation: pulsePop 2s ease-in-out infinite;" data-aos="zoom-in" data-aos-delay="200">
+      <h2 class="text-xl font-bold mb-2">Projects</h2>
+      <p class="text-sm font-semibold">Web Systems And Technologies 1 Project</p>
+      <p class="text-sm">Data Structures And Algorithms Project</p>
+    </a>
+
+    <div class="w-[450px] h-[450px] bg-center bg-cover text-white text-center flex flex-col justify-center items-center p-5" style="background-image: url('images/pinkleaf.jpg'); animation: pulsePop 2s ease-in-out infinite;" data-aos="zoom-in" data-aos-delay="300">
+      <h2 class="text-xl font-bold mb-2">Skills</h2>
+      <ul class="text-sm font-semibold space-y-1">
+        <li>Graphic Designing</li>
+        <li>Compassion</li>
+        <li>Diligence</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white py-10 mt-10 animate-fadeSlideUp" style="animation: floatUpDown 3s ease-in-out infinite;">
+    <div class="max-w-4xl mx-auto text-center bg-pink-300 bg-opacity-70 rounded-xl px-6 py-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-pink-800">Connect With Me</h2>
+      <p class="mt-4 text-base sm:text-lg text-pink-900">Thanks for viewing my portfolio. If you’re interested in connecting or collaborating, just let me know. Below are my social media links.</p>
+      <div class="mt-6 flex justify-center gap-6">
+        <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" class="w-10 h-10 hover:scale-110 transition-transform duration-300" /></a>
+        <a href="#" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="w-10 h-10 hover:scale-110 transition-transform duration-300" /></a>
+        <a href="#" target="_blank"><img src="images/youtube.png" alt="YouTube" class="w-10 h-10 hover:scale-110 transition-transform duration-300" /></a>
+        <a href="#" target="_blank"><img src="images/twt.png" alt="Twitter" class="w-10 h-10 hover:scale-110 transition-transform duration-300" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
